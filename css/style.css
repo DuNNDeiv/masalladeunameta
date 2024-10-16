@@ -1,0 +1,925 @@
+@charset "UTF-8";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+/*NAV*/
+nav {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  width: 60%;
+  position: fixed;
+  z-index: 1000;
+}
+
+#nav_contenido {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;
+width: 100%;
+padding: 0px 25px;
+}
+
+#nav_logo a {
+  display: flex;
+  align-items: center;
+}
+
+#nav_logo img {
+  height: 85px;
+  width: auto;
+}
+
+#nav_links {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+
+.nav_item a {
+  color: #f3f3f3;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.nav_item a:hover {
+  transition: all 0.3s ease;
+  color: #E71C51;
+}
+
+/*INDEX*/
+
+#main_banner {
+    background-image: url(../img/banner_main.JPG);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+#main_banner h1{
+  font-family: "otomanopee-one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+}
+
+#info_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  background-color: #033C7F;
+}
+
+#info_contenido {
+  padding: 20px;
+  width: 60%;
+  text-align: center;
+  color: #fff;
+}
+
+#info_contenido h2 {
+  font-family: "otomanopee-one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+#info_contenido p {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#poncho_main {
+  display: flex;
+  align-items: center;
+  padding: 80px 0 0 0;
+  background-color: #FECCC5;
+}
+
+#poncho_contenido {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#img_poncho {
+  width: 80%;
+  margin-right: 10px;
+}
+
+#poncho_texto {
+  color: #000;
+  text-align: left;
+  position: relative;
+  margin-left: -35%;
+}
+
+#poncho_texto h2 {
+  font-family: "otomanopee-one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+#poncho_texto p {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#servicios_main {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 80px 0;
+}
+
+#servicios_main h2 {
+  font-size: 60px;
+  font-family: "otomanopee-one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#cajas_contenido {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.servicios_caja {
+  position: relative;
+  width: 30%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.servicios_caja img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.hover_caja_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.servicios_caja:hover .hover_caja_img {
+  opacity: 1;
+}
+
+.caja_texto {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 10px;
+  transition: opacity 0.3s ease;
+}
+
+.servicios_caja:hover .caja_texto{
+  opacity: 0;
+}
+
+.hover_caja_texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+
+.servicios_caja:hover .hover_caja_texto {
+  opacity: 1;
+}
+
+#caja_izq {
+  text-align: right;
+  padding-right: 80px;
+}
+
+#caja_med {
+  text-align: center;
+}
+
+#caja_der {
+  text-align: left;
+  padding-left: 80px;
+}
+
+.banner_pestana_contenido {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_pestana_contenido img {
+  width: 100%;
+  height: auto;
+}
+
+/*CONSEJOS*/
+#titulo_consejos {
+  font-family: "otomanopee-one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  color: #ffffff;
+  font-size: 80px; 
+  text-align: center;
+  top: 500px;
+  left: 400px;
+}
+
+#consejo_horizontal_gafas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 0 0;
+}
+
+.consejo_contenido {
+  display: flex;
+  align-items: center;
+  width: 60%;
+
+}
+
+.consejo_contenido img {
+  width: 40%;
+  height: auto;
+  margin-right: 80px;
+}
+
+.consejo_texto {
+ color: #000    ;
+ width: 60%;
+}
+
+.consejo_texto h3 {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.consejo_texto p {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.consejo_texto_bln {
+  text-align: center;
+  color: #ffffff;
+ }
+ 
+ .consejo_texto_bln h3 {
+   font-family: "Passion One", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 50px;
+ }
+ 
+ .consejo_texto_bln p {
+   font-size: 30px;
+   font-family: "Montserrat", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 600;
+   font-style: normal;
+ }
+
+#consejo_horizontal_plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10px;
+    background-image: url(../img/fondo_rosado.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#btn_consejo {
+  background-color: #033C7F;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 20px auto 0 1000px;
+}
+
+
+#consejo_cuadro {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+
+#cuadro_izq {
+  background-color: #033C7F;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding-right: 30px;
+}
+
+#cuadro_izq img {
+  padding-top: 40px;
+  width: 40%;
+  height: auto;
+}
+
+
+#cuadro_der {
+    background-image: url(../img/infraestructura.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 40px;
+    justify-content: center;
+}
+
+#consejo_columnas {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#columna_izq {
+  background-color: #ffffff;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+#columna_izq img {
+  width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#columna_der {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub_cuadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+#sub_cuadro1 {
+  background-color: #E71C51;
+}
+
+#sub_cuadro1 img{
+  width: 55%;
+}
+
+#sub_cuadro2 {
+  background-color: #FECCC5;
+}
+
+#sub_cuadro2 img{
+  width: 40%;
+}
+
+/*RETOS*/
+
+#titulo_retos {
+  font-family: "otomanopee-one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  color: #ffffff;
+  font-size: 80px; 
+  text-align: center;
+  top: 500px;
+  left: 1200px;
+}
+
+#retos_contenedor {
+  padding: 50px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reto_detalle {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.reto_detalle img {
+  width: 40%;
+  border-radius: 200px 0 0 200px;
+}
+
+.reto_info {
+  width: 60%;
+}
+
+.reto_info h2, h3 {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.reto_info h2 {
+  font-size: 40px;
+}
+
+#tit_reto_amr {
+  color: #FE9D10;
+}
+
+#tit_reto_azl {
+  color: #033C7F;
+}
+
+#tit_reto_rsd {
+  color: #E71C51;
+}
+
+.reto_info h3 {
+  font-size: 32px;
+}
+
+.reto_info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+/*RUTAS*/
+#titulo_rutas {
+  font-family: "otomanopee-one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  color: #ffffff;
+  font-size: 80px; 
+  text-align: center;
+  top: 500px;
+  left: 1000px;
+}
+
+#rutas_contenedor {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.filas_ruta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.filas_ruta h2 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#tit_amr {
+  color: #FE9D10;
+}
+
+#tit_azl {
+  color: #033C7F;
+}
+
+#tit_rsd {
+  color: #E71C51;
+}
+
+.contenedor_cartas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.filas_ruta:nth-child(1) .tarjeta_ruta {
+  background-color: #FE9D10;
+}
+
+.filas_ruta:nth-child(2) .tarjeta_ruta {
+  background-color: #033C7F;
+}
+
+.filas_ruta:nth-child(3) .tarjeta_ruta {
+  background-color: #E71C51;
+}
+
+.tarjeta_ruta {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%
+}
+
+.tarjeta_ruta img {
+  width: 100%;
+  border-radius: 20px
+}
+
+.tarjeta_ruta h3 {
+  font-size: 40px;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 10px;
+}
+
+.txt_tarjeta_bln {
+  color: #fff;
+}
+
+.info_tarjeta{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 35px;
+}
+
+.subtitulo_tarjeta {
+  margin: 0 10px;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.subtitulo_tarjeta h4 {
+  font-size: 25px;  
+}
+
+.subtitulo_tarjeta p {
+  font-size: 35px;
+}
+
+
+.btn_explora {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #000;
+  cursor: pointer;
+  width: 80%;
+  margin-bottom: 15px;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.dificultad_medal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dificultad_medal img {
+  max-width: 80px;
+}
+
+/*DETALLE RUTAS*/
+.banner_rutas_contenido_amr {
+    background-image: url(../img/amarillo_dificultad.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 610px;
+    color: #fff;
+}
+
+.banner_rutas_contenido_azl {
+    background-image: url(../img/azul_dificultad.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 610px;
+    color: #fff;
+}
+
+.banner_rutas_contenido_rsd {
+    background-image: url(../img/rosado_dificultad.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 610px;
+    color: #fff;
+}
+
+.titulo_ruta_detalle {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+}
+
+.info_banner_ruta {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.info_item {
+  text-align: center;
+}
+
+.contenedor_descripcion_banner_amr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #885408;
+  width: 100%;
+  padding: 10px;
+}
+
+.contenedor_descripcion_banner_azl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #022854;
+  width: 100%;
+  padding: 10px;
+}
+
+.contenedor_descripcion_banner_rsd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a01238;
+  width: 100%;
+  padding: 10px;
+}
+
+.descripcion_banner {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.ruta_detalle_contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mapa_contenedor {
+  width: 80%;
+}
+
+.mapa_contenedor img {
+  width: 100%;
+  height: auto;
+}
+
+.info_ruta_contenedor {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.info_ruta_contenedor h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.clima_info {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.clima_txt_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.clima_txt_icon i {
+  font-size: 50px;
+}
+
+.clima_txt_icon p {
+  margin: 0;
+  font-size: 24px;
+}
+
+.amr_txt {
+  color: #FE9D10;
+}
+
+.azl_txt {
+  color: #033C7F;
+}
+
+.rsd_txt {
+  color: #E71C51;
+}
+
+.dificultad_ruta img {
+  padding-top: 15px;
+  width: 22%;
+}
+
+.valoracion_ruta h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.valoracion_ruta img {
+  width: 60%;
+  padding-top: 10px;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #212529;
+  color: #ffffff;
+  width: 100%;
+}
+
+.footer_contenido {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer_seccion {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer_seccion h2 {
+  font-size: 26px;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.footer_seccion p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer_seccion i {
+  font-size:40px;
+}
+
+#footer_seccion_sigue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#iconos_footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#footer_copy {
+  text-align: center;
+  width: 100%;
+}
+
+#footer_copy p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 5px 0;
+}

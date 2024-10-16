@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modular</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+  <!--Fuente Adobe-->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'tog4hcc',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/d31f33ae1a.js" crossorigin="anonymous"></script>
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <div id="nav_contenido">
+        <div id="nav_logo">
+          <a href=""><img src="img/logo.png" alt=""></a>
+        </div>
+        <ul id="nav_links">
+          <li class="nav_item"><a href="index.html">INICIO</a></li>
+          <li class="nav_item"><a href="retos.html">RETOS</a></li>
+          <li class="nav_item"><a href="rutas.html">RUTAS</a></li>
+          <li class="nav_item"><a href="consejos.html">CONSEJOS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="banner">
+    <div class="banner_pestana_contenido">
+      <img src="img/banner_consejos.jpg" alt="">
+      <h1 id="titulo_consejos">CONSEJOS</h1>
+    </div>
+  </section>
+  <section id="consejo_horizontal_gafas">
+    <div class="consejo_contenido">
+      <img src="img/poncho_gafas.png" alt="">
+      <div class="consejo_texto">
+        <h3>LLEVA GAFAS</h3>
+        <p>Las gafas te ayudarán a proteger tu visión del sol, del polvo, de los insectos y también de la lluvia. Más que un accesorio, son un elemento de seguridad tan importante como el casco.</p>
+      </div>
+    </div>
+  </section>
+  <section id="consejo_horizontal_plan">
+    <div class="consejo_contenido">
+      <div class="consejo_texto_bln">
+        <h3>PLANIFICA TUS RUTAS</h3>
+        <p>Antes de salir a entrenar, es importante que planifiques tus rutas con antelación. Esto te permitirá conocer el terreno por el que vas a rodar, adaptar tu entrenamiento a las características del mismo y te ayudará evitar situaciones peligrosas.</p>
+        <button id="btn_consejo" onclick="location.href='retos.html'">RÉTATE</button>
+      </div>
+    </div>
+  </section>
+  <section id="consejo_cuadro">
+    <div id="cuadro_izq">
+      <img src="img/poncho_casco.png" alt="">
+      <div class="consejo_texto_bln">
+        <h3>UTILIZA EL CASCO</h3>
+        <p>No es un accesorio, es un elemento de seguridad que te permite proteger la cabeza de cualquier impacto. Llévalo en cada rodada y hazlo parte de ti.</p>
+      </div>
+    </div>
+    <div id="cuadro_der">
+      <div class="consejo_texto_bln">
+        <h3>INFRAESTRUCTURA ADECUADA</h3>
+        <p>Busca ciclovías o carriles exclusivos para bicicletas. Asegúrate de ajustar bien la altura del sillín y el manubrio para que te sientas cómodo y evites sobrecargar tus hombros y espalda. </p>
+      </div>
+    </div>
+  </section>
+  <section id="consejo_columnas">
+    <div id="columna_izq">
+      <img src="img/poncho_feliz.PNG" alt="">
+      <div class="consejo_texto">
+        <h3>ESTIRA ANTES DE SALIR</h3>
+        <p>Antes de salir a rodar ¡no te olvides de estirar! Esto te ayudará a prevenir lesiones y preparar tu cuerpo, así disfrutarás más de tus paseos.</p>
+      </div>
+    </div>
+    <div id="columna_der">
+      <div class="sub_cuadro" id="sub_cuadro1">
+        <img src="img/alimentacion.png" alt="">
+        <div class="consejo_texto">
+          <h3>HIDRATACIÓN Y ALIMENTACIÓN</h3>
+          <p>Antes de salir a andar, hidrátate bien y come algo ligero. Además lleva agua y una barra energética para mantener tu energía a full en todo el recorrido.</p>
+        </div>
+      </div>
+      <div class="sub_cuadro" id="sub_cuadro2">
+        <img src="img/avisar.png" alt="">
+        <div class="consejo_texto">
+          <h3>AVISA A UN FAMILIAR O AMIGO</h3>
+          <p>Cuando salgas avisa a un familiar o amigo sobre tu ruta y hora de regreso. ¡Así estarás más seguro!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer_contenido">
+      <div class="footer_seccion">
+        <h2>CONTACTANOS</h2>
+        <p>+573005628978</p>
+        <p>icemind@gmail.com</p>
+      </div>
+      <div class="footer_seccion" id="footer_seccion_sigue">
+        <h2>SÍGUENOS</h2>
+        <div id="iconos_footer">
+          <p><i class="fa-brands fa-instagram"></i></p>
+          <p><i class="fa-brands fa-youtube"></i></p>
+          <p><i class="fa-brands fa-pinterest"></i></p>
+        </div>
+      </div>
+      <div class="footer_seccion">
+        <h2>NUESTRO PROYECTO</h2>
+        <p><i class="fa-brands fa-behance"></i></p>
+      </div>
+    </div>
+    <div id="footer_copy">
+      <p>2024. Más allá de una meta</p>
+      <p>Hecho en Bogotá, Colombia</p>
+    </div>
+  </footer>
+</body>
+</html>

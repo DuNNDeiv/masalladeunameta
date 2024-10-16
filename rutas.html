@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modular</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+  <!--Fuente Adobe-->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'tog4hcc',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/d31f33ae1a.js" crossorigin="anonymous"></script>
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <div id="nav_contenido">
+        <div id="nav_logo">
+          <a href=""><img src="img/logo.png" alt=""></a>
+        </div>
+        <ul id="nav_links">
+          <li class="nav_item"><a href="index.html">INICIO</a></li>
+          <li class="nav_item"><a href="retos.html">RETOS</a></li>
+          <li class="nav_item"><a href="rutas.html">RUTAS</a></li>
+          <li class="nav_item"><a href="consejos.html">CONSEJOS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="banner">
+    <div class="banner_pestana_contenido">
+      <img src="img/banner_rutas.jpg" alt="">
+      <h1 id="titulo_rutas">RUTAS</h1>
+    </div>
+  </section>
+  <section id="rutas_contenedor">
+    <div class="filas_ruta">
+      <h2 id="tit_amr">NIVEL: BUÑUELO</h2>
+      <div class="contenedor_cartas">
+        <div class="tarjeta_ruta">
+          <img src="img/alto_mondoñedo.jpg" alt="">
+          <h3>ALTO DE MONDOÑEDO</h3>
+          <div class="info_tarjeta">
+            <div class="subtitulo_tarjeta">
+              <h4>Distancia:</h4>
+              <p>3,63 KM</p>
+            </div>
+            <div class="subtitulo_tarjeta">
+              <h4>Desnivel:</h4>
+              <p>191 M</p>
+            </div>
+          </div>
+          <button class="btn_explora" onclick="location.href='mondonedo.html'">EXPLORAR</button>
+        </div>
+        <div class="dificultad_medal">
+          <img src="img/poncho_buñuelo.png" alt="">
+        </div>
+        <div class="tarjeta_ruta">
+          <img src="img/alto_yerbabuena.jpg" alt="">
+          <h3>ALTO DE YERBABUENA</h3>
+          <div class="info_tarjeta">
+            <div class="subtitulo_tarjeta">
+              <h4>Distancia:</h4>
+              <p>6,19 KM</p>
+            </div>
+            <div class="subtitulo_tarjeta">
+              <h4>Desnivel:</h4>
+              <p>468 M</p>
+            </div>
+          </div>
+          <button class="btn_explora" onclick="location.href='yerbabuena.html'">EXPLORAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="filas_ruta">
+      <h2 id="tit_azl">NIVEL: DOMINGUERO</h2>
+      <div class="contenedor_cartas">
+        <div class="tarjeta_ruta txt_tarjeta_bln">
+          <img src="img/alto_patios.jpg" alt="">
+          <h3>ALTO DE PATIOS</h3>
+          <div class="info_tarjeta">
+            <div class="subtitulo_tarjeta">
+              <h4>Distancia:</h4>
+              <p>6,44 KM</p>
+            </div>
+            <div class="subtitulo_tarjeta">
+              <h4>Desnivel:</h4>
+              <p>573 M</p>
+            </div>
+          </div>
+          <button class="btn_explora" onclick="location.href='patios.html'">EXPLORAR</button>
+        </div>
+        <div class="dificultad_medal">
+          <img src="img/poncho_dominguero.png" alt="">
+        </div>
+        <div class="tarjeta_ruta txt_tarjeta_bln">
+          <img src="img/el_verjon.jpg" alt="">
+          <h3>EL VERJÓN</h3>
+          <div class="info_tarjeta">
+            <div class="subtitulo_tarjeta">
+              <h4>Distancia:</h4>
+              <p>15,15 KM</p>
+            </div>
+            <div class="subtitulo_tarjeta">
+              <h4>Desnivel:</h4>
+              <p>619 M</p>
+            </div>
+          </div>
+          <button class="btn_explora" onclick="location.href='verjon.html'">EXPLORAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="filas_ruta">
+      <h2 id="tit_rsd">NIVEL: BERRACO</h2>
+      <div class="contenedor_cartas">
+        <div class="tarjeta_ruta txt_tarjeta_bln">
+          <img src="img/alto_vino.jpg" alt="">
+          <h3>ALTO DEL VINO</h3>
+          <div class="info_tarjeta">
+            <div class="subtitulo_tarjeta">
+              <h4>Distancia:</h4>
+              <p>27,76 KM</p>
+            </div>
+            <div class="subtitulo_tarjeta">
+              <h4>Desnivel:</h4>
+              <p>1.654  M</p>
+            </div>
+          </div>
+          <button class="btn_explora" onclick="location.href='vino.html'">EXPLORAR</button>
+        </div>
+        <div class="dificultad_medal">
+          <img src="img/poncho_berraco.png" alt="">
+        </div>
+        <div class="tarjeta_ruta txt_tarjeta_bln">
+          <img src="img/vuelta_sabana.jpg" alt="">
+          <h3>VUELTA A LA SABANA</h3>
+          <div class="info_tarjeta">
+            <div class="subtitulo_tarjeta">
+              <h4>Distancia:</h4>
+              <p>80,72 KM</p>
+            </div>
+            <div class="subtitulo_tarjeta">
+              <h4>Desnivel:</h4>
+              <p>756 M</p>
+            </div>
+          </div>
+          <button class="btn_explora" onclick="location.href='sabana.html'">EXPLORAR</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer_contenido">
+      <div class="footer_seccion">
+        <h2>CONTACTANOS</h2>
+        <p>+573005628978</p>
+        <p>icemind@gmail.com</p>
+      </div>
+      <div class="footer_seccion" id="footer_seccion_sigue">
+        <h2>SÍGUENOS</h2>
+        <div id="iconos_footer">
+          <p><i class="fa-brands fa-instagram"></i></p>
+          <p><i class="fa-brands fa-youtube"></i></p>
+          <p><i class="fa-brands fa-pinterest"></i></p>
+        </div>
+      </div>
+      <div class="footer_seccion">
+        <h2>NUESTRO PROYECTO</h2>
+        <p><i class="fa-brands fa-behance"></i></p>
+      </div>
+    </div>
+    <div id="footer_copy">
+      <p>2024. Más allá de una meta</p>
+      <p>Hecho en Bogotá, Colombia</p>
+    </div>
+  </footer>
+</body>
+</html>
